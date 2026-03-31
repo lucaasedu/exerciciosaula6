@@ -11,12 +11,12 @@ public class ex5 {
 
         if (valorCompra > 1000) {
             desconto = valorCompra * 0.85;
-            System.out.println("Desconto de 15%: " + desconto);
+            System.out.println("Valor final com desconto de 15%: " + desconto);
         }
 
         else{
             desconto = valorCompra * 0.92;
-            System.out.println("Desconto de 8%: " + desconto);
+            System.out.println("Valor final com desconto de 8%: " + desconto);
         }
     }
 }
