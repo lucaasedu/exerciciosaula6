@@ -3,20 +3,23 @@ import java.util.Scanner;
 public class ex5 {
 
     public static void main(String[] args) {
-        double valorCompra, desconto;
+        double l1,l2,l3;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("digite o valor total da compra: ");
-        valorCompra = sc.nextDouble();
+        System.out.println("digite o lado de um triangulo: ");
+        l1 = sc.nextDouble();
 
-        if (valorCompra > 1000) {
-            desconto = valorCompra * 0.85;
-            System.out.println("Valor final com desconto de 15%: " + desconto);
+        System.out.println("digite o segundo lado: ");
+        l2 = sc.nextDouble();
+
+        System.out.println("digite o terceiro lado: ");
+        l3 = sc.nextDouble();
+
+        if (l1 < l2 + l3 && l2 < l1 + l3 && l3 < l1 + l2){
+            System.out.println("Triangulo válido");
         }
-
         else{
-            desconto = valorCompra * 0.92;
-            System.out.println("Valor final com desconto de 8%: " + desconto);
+            System.out.println("Triangulo inválido");
         }
     }
 }
